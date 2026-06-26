@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Story — Stefanie Zucker | Zucker Digital</title>
+<meta name="description" content="A year ago I'd never written a line of code. Here's the story of what happened next." />
+<meta property="og:title" content="My Story — Stefanie Zucker" />
+<meta property="og:description" content="A year ago I'd never written a line of code. Here's what happened next." />
+<meta property="og:type" content="website" />
+<style>
+  :root{
+    --bg:#0e1116; --card:#171b22; --card-hover:#1f2530;
+    --text:#f4f6fa; --muted:#9aa4b2; --accent:#5b8def; --accent-2:#7c5cff; --border:#262c38;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:radial-gradient(1200px 600px at 50% -10%, #1a2130 0%, var(--bg) 55%);
+    color:var(--text);min-height:100vh;line-height:1.65;
+    display:flex;flex-direction:column;align-items:center;padding:28px 20px 48px;
+  }
+  .wrap{width:100%;max-width:560px}
+
+  .back{display:inline-flex;align-items:center;gap:7px;color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;margin-bottom:26px}
+  .back:hover{color:var(--accent)}
+
+  .eyebrow{color:var(--accent);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;letter-spacing:.04em;margin-bottom:10px}
+  h1{font-size:30px;font-weight:800;letter-spacing:-.5px;line-height:1.15;margin-bottom:16px}
+  h1 .hl{color:var(--accent)}
+  .lede{color:var(--text);font-size:17px;opacity:.92;margin-bottom:6px}
+  .sub{color:var(--muted);font-size:15px}
+
+  h2{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+     margin:40px 0 14px;border-top:1px solid var(--border);padding-top:26px}
+
+  p{color:#d7dde6;font-size:16px;margin-bottom:14px}
+  p.caption{color:var(--muted);font-size:14px;text-align:center;margin-top:10px}
+
+  /* Vertical (phone) video — framed, centered, capped so it doesn't dominate */
+  .video{
+    width:100%;max-width:330px;margin:0 auto;border-radius:18px;overflow:hidden;
+    border:1px solid var(--border);background:#000;box-shadow:0 10px 40px rgba(0,0,0,.45);
+  }
+  .video video{display:block;width:100%;height:auto}
+
+  /* CTA buttons reused from the hub */
+  .cta{display:flex;flex-direction:column;gap:12px;margin-top:14px}
+  a.link{
+    display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);
+    border-radius:14px;padding:15px 18px;color:var(--text);text-decoration:none;font-weight:600;font-size:16px;
+    transition:transform .12s ease, background .18s ease, border-color .18s ease;
+  }
+  a.link:hover{background:var(--card-hover);transform:translateY(-2px);border-color:var(--accent)}
+  a.link .arrow{margin-left:auto;color:var(--muted)}
+  a.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));border:none;color:#fff;justify-content:center}
+  a.primary:hover{filter:brightness(1.06)}
+
+  footer{margin-top:44px;color:var(--muted);font-size:13px;text-align:center;width:100%}
+  footer a{color:var(--muted);text-decoration:none}
+  footer a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="index.html">← Zucker Digital</a>
+
+  <div class="eyebrow">// my story</div>
+  <h1>A year ago, I'd never written a <span class="hl">single line of code</span>.</h1>
+  <p class="lede">Now I've taught myself to build real software — and I'm sharing the whole messy, honest journey in public.</p>
+  <p class="sub">This is where it lives. New chapters land here as the story unfolds.</p>
+
+  <!-- ============================================================
+       CHAPTER 1 — THE ORIGIN (public)
+       ============================================================ -->
+  <h2>Chapter 1 — Where it started</h2>
+  <p>The intro that kicked it all off.</p>
+  <div class="video">
+    <video controls preload="metadata" playsinline poster="origin-poster.jpg">
+      <source src="origin.mp4" type="video/mp4" />
+      Your browser doesn't support embedded video — <a href="origin.mp4">watch it here</a>.
+    </video>
+  </div>
+  <p class="caption">Part 1 · the beginning</p>
+
+  <!-- ============================================================
+       CHAPTER 2 — THE RE-ENTRY / FOLLOW-UP (public)
+       ============================================================ -->
+  <h2>Chapter 2 — Picking it back up</h2>
+  <p>Life got in the way for a bit. Here's the honest re-entry — and a tease of what's still coming.</p>
+  <div class="video">
+    <video controls preload="metadata" playsinline poster="followup-poster.jpg">
+      <source src="followup.mp4" type="video/mp4" />
+      Your browser doesn't support embedded video — <a href="followup.mp4">watch it here</a>.
+    </video>
+  </div>
+  <p class="caption">Part 2 · the re-entry</p>
+
+  <!-- ============================================================
+       NEXT CHAPTERS — DRIP ZONE
+       Add each new beat here the DAY AFTER it drops on social, so the
+       page never front-runs the punchline. Copy a block below:
+
+       <h2>Chapter 3 — [title]</h2>
+       <p>[1-2 line setup]</p>
+       <div class="video">
+         <video controls preload="metadata" playsinline poster="ch3-poster.jpg">
+           <source src="ch3.mp4" type="video/mp4" />
+         </video>
+       </div>
+       <p class="caption">Part 3 · [label]</p>
+       ============================================================ -->
+
+  <!-- ============================================================
+       CTA — route them onward to the work
+       ============================================================ -->
+  <h2>What I'm building</h2>
+  <div class="cta">
+    <a class="link primary" href="index.html">See all my apps →</a>
+    <a class="link" href="https://www.linkedin.com/in/stefaniezucker" target="_blank" rel="noopener">Follow the build on LinkedIn <span class="arrow">↗</span></a>
+    <a class="link" href="mailto:stefanie@zuckerdigital.com">Work with me <span class="arrow">↗</span></a>
+  </div>
+
+  <footer>
+    © <span id="yr"></span> Zucker Digital · <a href="mailto:stefanie@zuckerdigital.com">stefanie@zuckerdigital.com</a>
+  </footer>
+</div>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zucker Digital — Stefanie Zucker</title>
+<meta name="description" content="Stefanie Zucker — building AI products in public. Pawtrait Communities, Pros & Pals." />
+<!-- Open Graph (how the link previews when shared on social / text) -->
+<meta property="og:title" content="Zucker Digital — Stefanie Zucker" />
+<meta property="og:description" content="Building AI products in public. Start here." />
+<meta property="og:type" content="website" />
+<style>
+  :root{
+    --bg:#0e1116;          /* deep near-black */
+    --card:#171b22;        /* button surface */
+    --card-hover:#1f2530;
+    --text:#f4f6fa;
+    --muted:#9aa4b2;
+    --accent:#5b8def;      /* Zucker Digital blue — swap to your brand color */
+    --accent-2:#7c5cff;    /* secondary for the gradient */
+    --border:#262c38;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:radial-gradient(1200px 600px at 50% -10%, #1a2130 0%, var(--bg) 55%);
+    color:var(--text);min-height:100vh;
+    display:flex;flex-direction:column;align-items:center;
+    padding:48px 20px 40px;line-height:1.5;
+  }
+  .wrap{width:100%;max-width:520px;display:flex;flex-direction:column;align-items:center}
+
+  /* ---- Header ---- */
+  .avatar{
+    width:84px;height:84px;border-radius:50%;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    display:flex;align-items:center;justify-content:center;
+    font-size:34px;font-weight:700;letter-spacing:1px;color:#fff;
+    box-shadow:0 8px 30px rgba(91,141,239,.35);margin-bottom:18px;
+    /* To use a real photo/logo: delete the text "SZ" below and set:
+       background:url('avatar.jpg') center/cover; */
+  }
+  h1{font-size:24px;font-weight:700;letter-spacing:-.3px}
+  .handle{color:var(--accent);font-weight:600;font-size:15px;margin-top:2px}
+  .tagline{color:var(--muted);font-size:15px;margin-top:10px;text-align:center;max-width:380px;text-wrap:balance}
+
+  /* ---- Sections ---- */
+  .section-label{
+    align-self:flex-start;color:var(--muted);font-size:12px;font-weight:700;
+    letter-spacing:.12em;text-transform:uppercase;margin:30px 0 12px 4px;
+  }
+
+  /* ---- Link buttons ---- */
+  .links{width:100%;display:flex;flex-direction:column;gap:12px}
+  a.link{
+    display:flex;align-items:center;gap:14px;
+    background:var(--card);border:1px solid var(--border);border-radius:14px;
+    padding:16px 18px;color:var(--text);text-decoration:none;font-weight:600;font-size:16px;
+    transition:transform .12s ease, background .18s ease, border-color .18s ease;
+  }
+  a.link:hover{background:var(--card-hover);transform:translateY(-2px);border-color:var(--accent)}
+  a.link .ico{flex:0 0 26px;height:26px;display:flex;align-items:center;justify-content:center;color:var(--accent)}
+  a.link .ico svg{width:22px;height:22px}
+  a.link .body{display:flex;flex-direction:column}
+  a.link .sub{color:var(--muted);font-weight:500;font-size:13px;margin-top:1px}
+  a.link .arrow{margin-left:auto;color:var(--muted);font-size:18px}
+
+  a.featured{
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    border:none;color:#fff;justify-content:center;font-size:17px;padding:18px;
+  }
+  a.featured .ico{color:#fff}
+  a.featured:hover{filter:brightness(1.06);border-color:transparent}
+
+  /* ---- Social row ---- */
+  .socials{display:flex;gap:14px;margin-top:18px}
+  .socials a{
+    width:46px;height:46px;border-radius:50%;background:var(--card);
+    border:1px solid var(--border);display:flex;align-items:center;justify-content:center;
+    color:var(--text);transition:transform .12s ease, background .18s ease, border-color .18s ease;
+  }
+  .socials a:hover{background:var(--card-hover);transform:translateY(-2px);border-color:var(--accent)}
+  .socials svg{width:22px;height:22px}
+
+  footer{margin-top:34px;color:var(--muted);font-size:13px;text-align:center}
+  footer a{color:var(--muted);text-decoration:none}
+  footer a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="avatar" style="background:url('avatar.jpg') center/cover;"></div>
+  <h1>Stefanie Zucker</h1>
+  <div class="handle">Zucker Digital</div>
+  <p class="tagline">Building real AI products in public, and teaching others how.</p>
+
+  <!-- ============ FEATURED ============ -->
+  <div class="links" style="margin-top:26px">
+    <a class="featured link" href="story.html">
+      <span class="ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      </span>
+      <span class="body"><span>Start here</span></span>
+    </a>
+  </div>
+
+  <!-- ============ THE APPS ============ -->
+  <div class="section-label">What I'm building</div>
+  <div class="links">
+    <a class="link" href="https://pawtraitcommunities.com" target="_blank" rel="noopener">
+      <span class="ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </span>
+      <span class="body"><span>Pawtrait Communities</span><span class="sub">AI pet portraits for neighborhoods</span></span>
+      <span class="arrow">↗</span>
+    </a>
+    <a class="link" href="https://pawtraitpros.com" target="_blank" rel="noopener">
+      <span class="ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-4V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/></svg>
+      </span>
+      <span class="body"><span>Pawtrait Pros</span><span class="sub">AI portraits + merch for pet businesses</span></span>
+      <span class="arrow">↗</span>
+    </a>
+    <a class="link" href="https://pawtraitpals.com" target="_blank" rel="noopener">
+      <span class="ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5c-1.5 0-2.7 1.3-2.7 2.8 0 1 .5 1.9 1.3 2.4-2 .6-3.6 2.3-3.6 4.5V17h10v-.3c0-2.2-1.5-3.9-3.6-4.5.8-.5 1.3-1.4 1.3-2.4C13.7 6.3 12.5 5 11 5z"/></svg>
+      </span>
+      <span class="body"><span>Pawtrait Pals</span><span class="sub">AI portraits for rescues & shelters</span></span>
+      <span class="arrow">↗</span>
+    </a>
+    <a class="link" href="https://findmynexthome.us" target="_blank" rel="noopener">
+      <span class="ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </span>
+      <span class="body"><span>Find My Next Home</span><span class="sub">A calm, guided home search</span></span>
+      <span class="arrow">↗</span>
+    </a>
+    <a class="link" href="https://opscheckin.com" target="_blank" rel="noopener">
+      <span class="ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      </span>
+      <span class="body"><span>Ops CheckIn</span><span class="sub">Event check-in for attendees & volunteers</span></span>
+      <span class="arrow">↗</span>
+    </a>
+  </div>
+
+  <!-- ============ CONNECT ============ -->
+  <div class="section-label">Work with me</div>
+  <div class="links">
+    <a class="link" href="mailto:stefanie@zuckerdigital.com">
+      <span class="ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+      </span>
+      <span class="body"><span>Email me</span><span class="sub">stefanie@zuckerdigital.com</span></span>
+      <span class="arrow">↗</span>
+    </a>
+  </div>
+
+  <!-- ============ SOCIALS ============ -->
+  <div class="section-label" style="align-self:center;margin-bottom:6px">Follow the build</div>
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/stefaniezucker" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.76-1.75 1.76zm13.5 12.27h-3v-5.6c0-3.37-4-3.12-4 0v5.6h-3v-11h3v1.77c1.4-2.59 7-2.78 7 2.48v6.75z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/sazucker08" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.22 1 .48 1.4.9.42.4.68.8.9 1.4.17.4.36 1 .42 2.2.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.8-.42 2.2-.22.6-.48 1-.9 1.4-.4.42-.8.68-1.4.9-.4.17-1 .36-2.2.42-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.8-.25-2.2-.42-.6-.22-1-.48-1.4-.9-.42-.4-.68-.8-.9-1.4-.17-.4-.36-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.8.42-2.2.22-.6.48-1 .9-1.4.4-.42.8-.68 1.4-.9.4-.17 1-.36 2.2-.42C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.07-1.1.05-1.7.24-2.1.4-.5.2-.9.43-1.3.83-.4.4-.63.8-.83 1.3-.16.4-.35 1-.4 2.1C2.6 9.7 2.6 10.1 2.6 12s0 2.3.07 3.5c.05 1.1.24 1.7.4 2.1.2.5.43.9.83 1.3.4.4.8.63 1.3.83.4.16 1 .35 2.1.4 1.2.07 1.6.07 4.7.07s3.5 0 4.7-.07c1.1-.05 1.7-.24 2.1-.4.5-.2.9-.43 1.3-.83.4-.4.63-.8.83-1.3.16-.4.35-1 .4-2.1.07-1.2.07-1.6.07-3.5s0-2.3-.07-3.5c-.05-1.1-.24-1.7-.4-2.1-.2-.5-.43-.9-.83-1.3-.4-.4-.8-.63-1.3-.83-.4-.16-1-.35-2.1-.4C15.5 4 15.1 4 12 4zm0 3.06A4.94 4.94 0 1 0 12 17a4.94 4.94 0 0 0 0-9.88zm0 8.15A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm6.3-8.35a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0z"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@stefaniez88" target="_blank" rel="noopener" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.02-2.82h-3.1v12.4a2.6 2.6 0 0 1-2.6 2.5 2.6 2.6 0 0 1-.4-5.17V9.6a5.7 5.7 0 1 0 6.1 5.68V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3a4.28 4.28 0 0 1-3.28-1.48z"/></svg>
+    </a>
+    <a href="https://www.threads.net/@sazucker08" target="_blank" rel="noopener" aria-label="Threads">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.2 22h-.05c-3.3-.02-5.84-1.12-7.55-3.26C3.13 16.85 2.4 14.5 2.37 12.02v-.04c.03-2.48.76-4.83 2.28-6.72C6.34 3.12 8.88 2.02 12.16 2h.05c2.52.02 4.62.66 6.25 1.9 1.53 1.17 2.6 2.84 3.18 4.96l-1.97.54c-.98-3.55-3.5-5.37-7.47-5.4-2.62.02-4.6.85-5.9 2.48-1.2 1.52-1.83 3.72-1.85 5.04.02 1.32.65 3.52 1.85 5.04 1.3 1.63 3.28 2.46 5.9 2.48 2.36-.02 3.92-.57 5.22-1.85 1.48-1.46 1.46-3.25 1.0-4.34-.27-.64-.76-1.17-1.43-1.57-.17 1.2-.55 2.16-1.13 2.88-.78.96-1.9 1.48-3.32 1.55-1.08.05-2.12-.2-2.92-.71-.95-.6-1.5-1.53-1.56-2.6-.1-2.13 1.6-3.66 4.23-3.8.93-.06 1.8 0 2.6.15-.1-.65-.32-1.16-.64-1.53-.44-.5-1.12-.76-2.02-.76h-.03c-.72 0-1.7.2-2.32 1.14l-1.65-1.1c.84-1.27 2.2-1.97 3.96-1.97h.05c2.95.02 4.7 1.83 4.88 5 .1.04.2.09.3.14 1.42.67 2.46 1.68 3.0 2.93.76 1.74.83 4.58-1.48 6.86C17.0 21.2 14.96 21.98 12.2 22zm1.0-9.4c-.16 0-.32 0-.48.01-1.98.11-2.4 1.07-2.36 1.76.05.86 1.0 1.26 1.9 1.21.83-.04 1.92-.36 2.1-2.7-.36-.1-.74-.2-1.16-.27-.0 0-.0 0 0 0z"/></svg>
+    </a>
+  </div>
+
+  <footer>
+    © <span id="yr"></span> Zucker Digital · <a href="mailto:stefanie@zuckerdigital.com">stefanie@zuckerdigital.com</a>
+  </footer>
+</div>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
