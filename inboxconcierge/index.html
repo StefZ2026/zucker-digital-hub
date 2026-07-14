@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Inbox Concierge — Zucker Digital</title>
+<meta name="description" content="Inbox Concierge triages your email into priority buckets, flags the people you actually reply to, and drafts replies — running entirely on your own machine." />
+<meta property="og:title" content="Inbox Concierge — a calmer inbox, run entirely on your machine" />
+<meta property="og:description" content="Triage your email into priority buckets, surface the people who matter, and draft replies — 100% local, your mail never leaves your computer." />
+<meta property="og:type" content="website" />
+<style>
+  :root{
+    --bg:#0e1116;--card:#171b22;--card-hover:#1f2530;--text:#f4f6fa;--muted:#9aa4b2;
+    --accent:#5b8def;--accent-2:#7c5cff;--border:#262c38;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:radial-gradient(1200px 600px at 50% -10%, #1a2130 0%, var(--bg) 55%);
+    color:var(--text);min-height:100vh;line-height:1.6;
+    display:flex;flex-direction:column;align-items:center;padding:36px 20px 56px;
+  }
+  .wrap{width:100%;max-width:640px}
+  .back{display:inline-flex;align-items:center;gap:7px;color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;margin-bottom:30px}
+  .back:hover{color:var(--accent)}
+  .eyebrow{color:var(--accent);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;letter-spacing:.04em;margin-bottom:12px}
+  h1{font-size:32px;font-weight:800;letter-spacing:-.5px;line-height:1.15;margin-bottom:16px}
+  h1 .hl{color:var(--accent)}
+  .lede{color:var(--text);font-size:18px;opacity:.92;margin-bottom:10px;text-wrap:balance}
+  .sub{color:var(--muted);font-size:15px;margin-bottom:8px}
+  h2{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+     margin:38px 0 14px;border-top:1px solid var(--border);padding-top:24px}
+  p{color:#d7dde6;font-size:16px;margin-bottom:14px}
+  .cards{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+  .feat{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px}
+  .feat b{display:block;font-size:16px;margin-bottom:3px}
+  .feat span{color:var(--muted);font-size:14.5px}
+  .privacy{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);
+    border-radius:12px;padding:16px 18px;margin-top:8px}
+  .privacy b{color:#fff}
+  .privacy a{color:var(--accent)}
+  .buckets{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .chip{background:var(--card);border:1px solid var(--border);border-radius:999px;padding:7px 13px;font-size:14px;font-weight:600}
+  footer{margin-top:44px;color:var(--muted);font-size:13px;text-align:center;width:100%}
+  footer a{color:var(--muted);text-decoration:none}
+  footer a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="/">&larr; Zucker Digital</a>
+
+  <div class="eyebrow">// inbox concierge</div>
+  <h1>A calmer inbox — run <span class="hl">entirely on your own machine</span>.</h1>
+  <p class="lede">Inbox Concierge reads your email, sorts it into priority buckets, surfaces the people you actually write back to, and drafts replies in your voice.</p>
+  <p class="sub">Your mail never leaves your computer. There's no cloud, no account, nothing for us to see.</p>
+
+  <h2>What it does</h2>
+  <div class="cards">
+    <div class="feat"><b>Triages every inbox into buckets</b><span>One quiet daily brief across all your accounts, sorted by what needs you now versus what can wait.</span></div>
+    <div class="feat"><b>Knows who your people are</b><span>It learns the contacts you actually reply to and always surfaces their mail — no more missing the ones that matter.</span></div>
+    <div class="feat"><b>Files, drafts, and declutters</b><span>Sorts mail into your folders, drafts replies for your approval, and helps clear years of backlog — nothing is ever permanently deleted without you.</span></div>
+  </div>
+
+  <div class="buckets">
+    <span class="chip">🔴 Respond now</span>
+    <span class="chip">🟠 Reply today</span>
+    <span class="chip">⭐ Your people</span>
+    <span class="chip">🔵 FYI</span>
+    <span class="chip">⚪ Downtime</span>
+    <span class="chip">🗑️ Probably toss</span>
+  </div>
+
+  <h2>Private by design</h2>
+  <div class="privacy">
+    <p style="margin-bottom:8px"><b>Inbox Concierge runs 100% locally.</b> When you connect Gmail, you grant access through Google's standard consent screen. Your email and your access tokens stay on your own device — we operate no server that receives or stores your mail.</p>
+    <p style="margin-bottom:0">Its use of information from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. Full details in our <a href="/privacy.html">Privacy Policy</a>.</p>
+  </div>
+
+  <footer>
+    © <span id="yr"></span> Zucker Digital · <a href="mailto:stefanie@zuckerdigital.com">stefanie@zuckerdigital.com</a><br>
+    <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a>
+  </footer>
+</div>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<!-- LeadConnector chat widget (SMS opt-in). Keep OFF any page that has another phone/SMS form. -->
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a567c84d166a8719f43d173" data-source="WEB_USER"></script>
+</body>
+</html>
