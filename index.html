@@ -9,6 +9,12 @@
 <meta property="og:title" content="Zucker Digital — Stefanie Zucker" />
 <meta property="og:description" content="Building AI products in public. Start here." />
 <meta property="og:type" content="website" />
+<!-- Favicon / app icons (ZD mark) -->
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<meta name="theme-color" content="#0e1116" />
 <style>
   :root{
     --bg:#0e1116;          /* deep near-black */
@@ -43,6 +49,13 @@
   }
   h1{font-size:24px;font-weight:700;letter-spacing:-.3px}
   .handle{color:var(--accent);font-weight:600;font-size:15px;margin-top:2px}
+  /* ---- ZD logo lockup (light card: the mark is built for light backgrounds) ---- */
+  .brand{
+    display:block;margin-top:12px;background:#fdfcfc;border:1px solid rgba(255,255,255,.06);
+    border-radius:12px;padding:10px 16px;line-height:0;
+    box-shadow:0 6px 24px rgba(0,0,0,.35);
+  }
+  .brand img{display:block;width:100%;max-width:248px;height:auto}
   .tagline{color:var(--muted);font-size:15px;margin-top:10px;text-align:center;max-width:380px;text-wrap:balance}
 
   /* ---- Sections ---- */
@@ -93,7 +106,7 @@
 
   <div class="avatar" style="background:url('avatar.jpg') center/cover;"></div>
   <h1>Stefanie Zucker</h1>
-  <div class="handle">Zucker Digital</div>
+  <span class="brand"><img src="zd-logo.png" alt="Zucker Digital — AI Strategy. Build. Scale." /></span>
   <p class="tagline">Building real AI products in public, and teaching others how.</p>
 
   <!-- ============ FEATURED ============ -->
